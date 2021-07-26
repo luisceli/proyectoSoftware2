@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arrayEstudiantes">
+
+        <item> Estudiante 1</item>
+        <item> Estudiante 2</item>
+        <item> Estudiante 3</item>
+        <item> Estudiante 4</item>
+        <item> Estudiante 5</item>
+        <item> Estudiante 6</item>
+        <item> Estudiante 7</item>
+        <item> Estudiante 8</item>
+        <item> Estudiante 9</item>
+        <item> Estudiante 10</item>
+
+
+
+
+
+
+
+    </string-array>
+
+
+</resources>

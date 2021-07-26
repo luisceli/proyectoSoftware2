@@ -7,16 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
-import static androidx.navigation.Navigation.findNavController;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link DatosFragment#newInstance} factory method to
+ * Use the {@link Inicio_datosFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class DatosFragment extends Fragment {
+public class Inicio_datosFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +24,7 @@ public class DatosFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public DatosFragment() {
+    public Inicio_datosFragment() {
         // Required empty public constructor
     }
 
@@ -37,11 +34,11 @@ public class DatosFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment DatosFragment.
+     * @return A new instance of fragment Inicio_datosFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static DatosFragment newInstance(String param1, String param2) {
-        DatosFragment fragment = new DatosFragment();
+    public static Inicio_datosFragment newInstance(String param1, String param2) {
+        Inicio_datosFragment fragment = new Inicio_datosFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,10 +59,6 @@ public class DatosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        return  inflater.inflate(R.layout.fragment_datos, container, false);
-
-
-
+        return inflater.inflate(R.layout.fragment_inicio_datos, container, false);
     }
 }

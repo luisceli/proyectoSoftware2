@@ -36,8 +36,8 @@
             android:id="@+id/action_estudiantesFragment_to_camponEvaluacionFragment"
             app:destination="@id/camponEvaluacionFragment" />
         <action
-            android:id="@+id/action_estudiantesFragment_to_datosFragment"
-            app:destination="@id/datosFragment" />
+            android:id="@+id/action_estudiantesFragment_to_datos"
+            app:destination="@id/datos" />
     </fragment>
     <fragment
         android:id="@+id/inicioFragment"
@@ -57,22 +57,42 @@
         android:id="@+id/datosFragment"
         android:name="com.example.proyectosoftware.DatosFragment"
         android:label="fragment_datos"
-        tools:layout="@layout/fragment_datos" >
-        <action
-            android:id="@+id/action_datosFragment_to_listaEstudiantesFragment"
-            app:destination="@id/listaEstudiantesFragment" />
-        <action
-            android:id="@+id/action_datosFragment_to_estadisticaFragment"
-            app:destination="@id/estadisticaFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_datos" />
     <fragment
         android:id="@+id/listaEstudiantesFragment"
         android:name="com.example.proyectosoftware.ListaEstudiantesFragment"
         android:label="fragment_lista_estudiantes"
-        tools:layout="@layout/fragment_lista_estudiantes" />
+        tools:layout="@layout/fragment_lista_estudiantes" >
+        <action
+            android:id="@+id/action_listaEstudiantesFragment_to_datos"
+            app:destination="@id/datos" />
+    </fragment>
     <fragment
         android:id="@+id/estadisticaFragment"
         android:name="com.example.proyectosoftware.EstadisticaFragment"
         android:label="fragment_estadistica"
-        tools:layout="@layout/fragment_estadistica" />
+        tools:layout="@layout/fragment_estadistica" >
+        <action
+            android:id="@+id/action_estadisticaFragment_to_datos"
+            app:destination="@id/datos" />
+    </fragment>
+    <activity
+        android:id="@+id/datos"
+        android:name="com.example.proyectosoftware.datos"
+        android:label="activity_datos"
+        tools:layout="@layout/activity_datos" />
+    <fragment
+        android:id="@+id/inicio_datosFragment"
+        android:name="com.example.proyectosoftware.Inicio_datosFragment"
+        android:label="fragment_inicio_datos"
+        tools:layout="@layout/fragment_inicio_datos" >
+        <action
+            android:id="@+id/action_inicio_datosFragment_to_datos"
+            app:destination="@id/datos" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificarFragment"
+        android:name="com.example.proyectosoftware.ModificarFragment"
+        android:label="fragment_modificar"
+        tools:layout="@layout/fragment_modificar" />
 </navigation>

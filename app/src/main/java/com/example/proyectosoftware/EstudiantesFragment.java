@@ -77,7 +77,7 @@ public class EstudiantesFragment extends Fragment {
         btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findNavController(v).navigate(R.id.action_estudiantesFragment_to_datosFragment);
+                findNavController(v).navigate(R.id.action_estudiantesFragment_to_datos);
             }
         });
         return vista;
