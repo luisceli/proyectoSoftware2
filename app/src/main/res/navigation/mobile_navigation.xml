@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.proyectosoftware.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.proyectosoftware.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.proyectosoftware.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/crearCursoFragment"
+        android:name="com.example.proyectosoftware.CrearCursoFragment"
+        android:label="fragment_crear_curso"
+        tools:layout="@layout/fragment_crear_curso" />
+    <fragment
+        android:id="@+id/estudiantesFragment"
+        android:name="com.example.proyectosoftware.EstudiantesFragment"
+        android:label="fragment_estudiantes"
+        tools:layout="@layout/fragment_estudiantes" >
+        <action
+            android:id="@+id/action_estudiantesFragment_to_camponEvaluacionFragment"
+            app:destination="@id/camponEvaluacionFragment" />
+        <action
+            android:id="@+id/action_estudiantesFragment_to_datosFragment"
+            app:destination="@id/datosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.proyectosoftware.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_estudiantesFragment"
+            app:destination="@id/estudiantesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/camponEvaluacionFragment"
+        android:name="com.example.proyectosoftware.camponEvaluacionFragment"
+        android:label="fragment_campon_evaluacion"
+        tools:layout="@layout/fragment_campon_evaluacion" />
+    <fragment
+        android:id="@+id/datosFragment"
+        android:name="com.example.proyectosoftware.DatosFragment"
+        android:label="fragment_datos"
+        tools:layout="@layout/fragment_datos" >
+        <action
+            android:id="@+id/action_datosFragment_to_listaEstudiantesFragment"
+            app:destination="@id/listaEstudiantesFragment" />
+        <action
+            android:id="@+id/action_datosFragment_to_estadisticaFragment"
+            app:destination="@id/estadisticaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaEstudiantesFragment"
+        android:name="com.example.proyectosoftware.ListaEstudiantesFragment"
+        android:label="fragment_lista_estudiantes"
+        tools:layout="@layout/fragment_lista_estudiantes" />
+    <fragment
+        android:id="@+id/estadisticaFragment"
+        android:name="com.example.proyectosoftware.EstadisticaFragment"
+        android:label="fragment_estadistica"
+        tools:layout="@layout/fragment_estadistica" />
+</navigation>

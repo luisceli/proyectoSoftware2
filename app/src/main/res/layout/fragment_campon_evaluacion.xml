@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camponEvaluacionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" ><![CDATA[>
+
+       ]]>
+
+       <EditText
+           android:id="@+id/editTextTextPersonName14"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="48dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="Name"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <EditText
+           android:id="@+id/editTextTextPersonName9"
+           android:layout_width="179dp"
+           android:layout_height="39dp"
+           android:layout_marginStart="32dp"
+           android:layout_marginLeft="32dp"
+           android:layout_marginTop="36dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="Name"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+
+       <Spinner
+           android:id="@+id/spinner"
+           android:layout_width="107dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="36dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName9"
+           app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+
+       <EditText
+           android:id="@+id/editTextTextPersonName10"
+           android:layout_width="190dp"
+           android:layout_height="45dp"
+           android:layout_marginStart="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="28dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="Name"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+       <EditText
+           android:id="@+id/editTextTextPersonName11"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="32dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="Name"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+
+       <EditText
+           android:id="@+id/editTextTextPersonName12"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="24dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text="Name"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+
+       <CheckBox
+           android:id="@+id/checkBox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="56dp"
+           android:layout_marginRight="56dp"
+           android:layout_marginBottom="28dp"
+           android:text="CheckBox"
+           app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+       <CheckBox
+           android:id="@+id/checkBox3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="56dp"
+           android:layout_marginRight="56dp"
+           android:layout_marginBottom="28dp"
+           android:text="CheckBox"
+           app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+       <CheckBox
+           android:id="@+id/checkBox4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="56dp"
+           android:layout_marginRight="56dp"
+           android:layout_marginBottom="28dp"
+           android:text="CheckBox"
+           app:layout_constraintBottom_toTopOf="@+id/button3"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+       <Button
+           android:id="@+id/button3"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="32dp"
+           android:text="Respuestas"
+           app:layout_constraintBottom_toTopOf="@+id/button5"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.416"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12"
+           app:layout_constraintVertical_bias="0.1" />
+
+       <Button
+           android:id="@+id/button5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="40dp"
+           android:text="Previsualizar"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.42"
+           app:layout_constraintStart_toStartOf="parent" />
+
+       <Button
+           android:id="@+id/button8"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="48dp"
+           android:layout_marginEnd="72dp"
+           android:layout_marginRight="72dp"
+           android:text="Añadir imagen"
+           android:textSize="8sp"
+           app:layout_constraintEnd_toStartOf="@+id/button9"
+           app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+       <Button
+           android:id="@+id/button9"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="68dp"
+           android:layout_marginRight="68dp"
+           android:layout_marginBottom="28dp"
+           android:text="Pregunta"
+           app:layout_constraintBottom_toTopOf="@+id/checkBox"
+           app:layout_constraintEnd_toEndOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>
